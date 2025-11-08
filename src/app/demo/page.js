@@ -11,7 +11,8 @@ export default function DemoPage() {
         fullName: '',
         email: '',
         phone: '',
-        password: ''
+        companyName: '',
+        message: ''
     });
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState('');
@@ -29,37 +30,36 @@ export default function DemoPage() {
         setMessage('');
 
         try {
-            // API'ye demo kaydı gönder
-            const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}/api/auth/local/register`, {
+            // API'ye demo isteği gönder
+            const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL || 'http://localhost:1337'}/api/demo-requests/submit`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    username: formData.email.split('@')[0] + '_demo',
-                    email: formData.email,
-                    password: formData.password,
                     fullName: formData.fullName,
+                    email: formData.email,
                     phone: formData.phone,
-                    role: 2, // authenticated/company role
-                    demoAccount: true
+                    companyName: formData.companyName,
+                    message: formData.message
                 }),
             });
 
             if (response.ok) {
-                setMessage('Demo kaydınız başarıyla oluşturuldu! Kısa süre içinde sizinle iletişime geçeceğiz.');
+                setMessage('Demo talebiniz başarıyla iletildi! Kısa süre içinde sizinle iletişime geçeceğiz.');
                 setFormData({
                     fullName: '',
                     email: '',
                     phone: '',
-                    password: ''
+                    companyName: '',
+                    message: ''
                 });
             } else {
                 const error = await response.json();
-                setMessage(error.error?.message || 'Bir hata oluştu. Lütfen tekrar deneyin.');
+                setMessage(error.error?.message || error.message || 'Bir hata oluştu. Lütfen tekrar deneyin.');
             }
         } catch (error) {
-            console.error('Demo kayıt hatası:', error);
+            console.error('Demo talep hatası:', error);
             setMessage('Bir hata oluştu. Lütfen tekrar deneyin.');
         } finally {
             setLoading(false);
@@ -142,21 +142,32 @@ export default function DemoPage() {
                                                 />
                                             </div>
 
-                                            <div className="col-12 mb-4">
+                                            <div className="col-12 mb-3">
                                                 <label className="form-label">
-                                                    Parola <span className="text-danger">*</span>
+                                                    Şirket Adı
                                                 </label>
                                                 <input
-                                                    type="password"
+                                                    type="text"
                                                     className="form-control"
-                                                    name="password"
-                                                    value={formData.password}
+                                                    name="companyName"
+                                                    value={formData.companyName}
                                                     onChange={handleChange}
-                                                    placeholder="Güvenli bir parola oluşturun"
-                                                    required
-                                                    minLength={6}
+                                                    placeholder="Şirket adınız (opsiyonel)"
                                                 />
-                                                <small className="text-muted">Minimum 6 karakter</small>
+                                            </div>
+
+                                            <div className="col-12 mb-4">
+                                                <label className="form-label">
+                                                    Mesajınız
+                                                </label>
+                                                <textarea
+                                                    className="form-control"
+                                                    name="message"
+                                                    value={formData.message}
+                                                    onChange={handleChange}
+                                                    placeholder="İhtiyaçlarınız hakkında kısa bir bilgi verebilirsiniz (opsiyonel)"
+                                                    rows="3"
+                                                />
                                             </div>
 
                                             <div className="col-12 mb-3">
