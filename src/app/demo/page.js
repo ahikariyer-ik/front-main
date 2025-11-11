@@ -86,7 +86,7 @@ export default function DemoPage() {
                                 <div className="card-body p-5">
                                     <h3 className="text-center mb-4">Ücretsiz Demo İsteyin</h3>
                                     <p className="text-muted text-center mb-4">
-                                        AHİ-İK 360'ı ücretsiz deneyin ve insan kaynakları yönetiminizi dijitalleştirin
+                                        Kurum360'ı ücretsiz deneyin ve insan kaynakları yönetiminizi dijitalleştirin
                                     </p>
 
                                     {message && (

@@ -10,8 +10,8 @@ const jakarta = Plus_Jakarta_Sans({
   })
 
 export const metadata = {
-  title: 'AhİKariyer - Değerlerinize Uygun İş ve Kariyer Platformu',
-  description: 'AhİKariyer - Değerlerinize Uygun İş ve Kariyer Platformu',
+  title: 'Kurum360.com - Dijital İnsan Kaynakları ve Kurum Yönetiminiz Bir Arada',
+  description: 'AhİKariyer - Dijital İnsan Kaynakları ve Kurum Yönetiminiz Bir Arada',
 }
 
 export default function RootLayout({ children }) {

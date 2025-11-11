@@ -1,5 +1,4 @@
 'use client'
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from "react";
@@ -59,11 +58,21 @@ export default function NavbarDark({navClass, navLight}){
     <header id="topnav" className={ `${scroll ? 'nav-sticky' :''} ${navClass}`}>
         <div className="container">
             <Link className="logo" href="/">
-                <span className="logo-light-mode">
-                    <Image src='/images/logo-dark.png' width={120} height={40} className="l-dark" alt=""/>
-                    <Image src='/images/logo-dark.png' width={120} height={40} className="l-light" alt=""/>
-                </span>
-                <Image src='/images/logo-dark.png' width={120} height={40} className="logo-dark-mode" alt=""/>
+                <div className="logo-content">
+                    <svg className="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 21H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M5 21V7L13 3V21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M19 21V11L13 7" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M9 9V9.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M9 12V12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M9 15V15.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                        <path d="M9 18V18.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                    <div className="logo-text">
+                        <span className="logo-title">KURUM360.COM</span>
+                        <span className="logo-subtitle">Dijital İnsan Kaynakları ve Kurum Yönetiminiz Bir Arada</span>
+                    </div>
+                </div>
             </Link>
             <div className="menu-extras">
                 <div className="menu-item">
@@ -141,6 +150,69 @@ export default function NavbarDark({navClass, navLight}){
                 </ul>
             </div>
         </div>
+        <style jsx>{`
+            .logo {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            .logo-content {
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+            }
+
+            .logo-icon {
+                width: 2rem;
+                height: 2rem;
+                color: #1e3a5f;
+                flex-shrink: 0;
+            }
+
+            .logo-text {
+                display: flex;
+                flex-direction: column;
+                gap: 0.125rem;
+            }
+
+            .logo-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #1e3a5f;
+                line-height: 1.2;
+                letter-spacing: 0.5px;
+            }
+
+            .logo-subtitle {
+                font-size: 0.625rem;
+                font-weight: 400;
+                color: #1e3a5f;
+                line-height: 1.2;
+                opacity: 0.8;
+            }
+
+            @media (max-width: 991px) {
+                .logo-subtitle {
+                    display: none;
+                }
+
+                .logo-title {
+                    font-size: 1rem;
+                }
+
+                .logo-icon {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                }
+            }
+
+            @media (max-width: 768px) {
+                .logo-content {
+                    gap: 0.5rem;
+                }
+            }
+        `}</style>
     </header>
     )
 }
