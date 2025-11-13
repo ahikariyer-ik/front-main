@@ -49,7 +49,7 @@ export default async function ServiceDetailPage({ params }) {
           <div className="position-middle-bottom">
             <nav aria-label="breadcrumb" className="d-block">
               <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                <li className="breadcrumb-item"><Link href="/">AhİKariyer</Link></li>
+                <li className="breadcrumb-item"><Link href="/">Ahikurumsal</Link></li>
                 <li className="breadcrumb-item"><Link href="/hizmetlerimiz">Hizmetler</Link></li>
                 <li className="breadcrumb-item active" aria-current="page">{service.data.title}</li>
               </ul>

@@ -22,7 +22,7 @@ export default function ServiceAgreement() {
                     <div className="position-middle-bottom">
                         <nav aria-label="breadcrumb" className="d-block">
                             <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                                <li className="breadcrumb-item"><Link href="/">AhİKariyer</Link></li>
+                                <li className="breadcrumb-item"><Link href="/">Ahikurumsal</Link></li>
                                 <li className="breadcrumb-item"><Link href="/fiyatlandirma">Paketler</Link></li>
                                 <li className="breadcrumb-item active" aria-current="page">Hizmet Akdi</li>
                             </ul>
@@ -51,19 +51,19 @@ export default function ServiceAgreement() {
                                     </h5>
                                     <p>
                                         
-                                    <span>1. Ahikariyer.com (Bundan sonra "Site" olarak anılacaktır)</span><br />
+                                    <span>1. Ahikurumsal.com (Bundan sonra "Site" olarak anılacaktır)</span><br />
                                     <span> 2. [İŞVERENİN ADI] (Bundan sonra "İşveren" olarak anılacaktır)</span>
                                     </p>
 
                                     <h5 className="card-title mt-4">Madde 1 - Konu</h5>
                                     <p className="text-muted">
-                                        Bu sözleşme, İşveren'in Ahikariyer.com platformu üzerinden iş ilanı yayınlamasına ilişkin şartları, tarafların hak ve yükümlülüklerini düzenlemektedir.
+                                        Bu sözleşme, İşveren'in Ahikurumsal.com platformu üzerinden iş ilanı yayınlamasına ilişkin şartları, tarafların hak ve yükümlülüklerini düzenlemektedir.
                                     </p>
 
                                     <h5 className="card-title mt-4">Madde 2 - Tarafların Hak ve Yükümlülükleri</h5>
                                     <p className="text-muted">
                                         <strong>2.1.</strong> İşveren, Site'de yayınlayacağı tüm iş ilanlarının Türkiye Cumhuriyeti İş Hukuku'na uygun olduğunu beyan ve taahhüt eder.<br />
-                                        <strong>2.2.</strong> <strong>İslami Değerlere Uygunluk Şartı:</strong> İşverenlerin, ahikariyer.com platformunda yayımlayacakları iş ilanlarının İslamî değerlere, genel ahlak kurallarına ve kamu düzenine uygun olması tavsiye edilir. Bu çerçevede; faizli işlemler, alkol, kumar, fuhuş, İslam dinince haram kılınmış ürünlerin üretimi, tanıtımı veya satışına ilişkin işler ile karma (kadın-erkek karışık) ve İslamî değerlere uygun olmayan çalışma ortamlarına yönelik ilanların yayımlanmaması önemle önerilmektedir.İşverenler, ilan yayımlarken bu hassasiyetleri dikkate almalıdır. Aksi hâlde doğabilecek manevî sorumlulukların ve vebalin işverene ait olacağı unutulmamalıdır. ahikariyer.com, İslami değerlere aykırı olduğunu tespit ettiği ilanları gerekçe göstermeksizin yayından kaldırma ve ilgili üyelikleri askıya alma veya sonlandırma hakkını saklı tutar.<br />
+                                        <strong>2.2.</strong> <strong>İslami Değerlere Uygunluk Şartı:</strong> İşverenlerin, ahikurumsal.com platformunda yayımlayacakları iş ilanlarının İslamî değerlere, genel ahlak kurallarına ve kamu düzenine uygun olması tavsiye edilir. Bu çerçevede; faizli işlemler, alkol, kumar, fuhuş, İslam dinince haram kılınmış ürünlerin üretimi, tanıtımı veya satışına ilişkin işler ile karma (kadın-erkek karışık) ve İslamî değerlere uygun olmayan çalışma ortamlarına yönelik ilanların yayımlanmaması önemle önerilmektedir.İşverenler, ilan yayımlarken bu hassasiyetleri dikkate almalıdır. Aksi hâlde doğabilecek manevî sorumlulukların ve vebalin işverene ait olacağı unutulmamalıdır. ahikurumsal.com, İslami değerlere aykırı olduğunu tespit ettiği ilanları gerekçe göstermeksizin yayından kaldırma ve ilgili üyelikleri askıya alma veya sonlandırma hakkını saklı tutar.<br />
                                         <strong>2.3.</strong> İşveren, yayınladığı ilanlarda ayrımcılık yapmayacağını, eşitlik ilkesine uygun hareket edeceğini taahhüt eder.<br />
                                         <strong>2.4.</strong> İşveren, verdiği ilanlarda gerçeğe aykırı beyanlarda bulunmayacağını, yanıltıcı bilgiler vermeyeceğini kabul eder.<br />
                                         <strong>2.5.</strong> İşveren, Site’nin belirlediği ilan yayınlama kurallarına ve teknik gereksinimlere uygun şekilde ilan vereceğini kabul eder.<br />
@@ -81,7 +81,7 @@ export default function ServiceAgreement() {
 
                                     <h5 className="card-title mt-4">Madde 4 - Sorumluluk Reddi</h5>
                                     <p className="text-muted">
-                                        <strong>4.1.</strong> Ahikariyer.com, İşveren tarafından yayınlanan ilanların doğruluğunu garanti etmez ve bu ilanların içeriğinden sorumlu tutulamaz.<br />
+                                        <strong>4.1.</strong> Ahikurumsal.com, İşveren tarafından yayınlanan ilanların doğruluğunu garanti etmez ve bu ilanların içeriğinden sorumlu tutulamaz.<br />
                                         <strong>4.2.</strong> İşveren, yayınladığı ilanların hukuka aykırı bir içerik içermesi halinde doğacak tüm hukuki ve cezai sorumluluğun kendisine ait olduğunu kabul eder.
                                     </p>
 
@@ -109,7 +109,7 @@ export default function ServiceAgreement() {
 
                                     <p className="text-muted">
                                         Taraflar işbu sözleşmeyi okuyup, anlayarak kabul etmişlerdir.<br />
-                                        <strong>Ahikariyer.com</strong><br />
+                                        <strong>Ahikurumsal.com</strong><br />
                                         Yetkili İmza: ___________<br />
                                         <strong>İşveren:</strong><br />
                                         [İŞVERENİN ADI]<br />

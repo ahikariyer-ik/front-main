@@ -37,7 +37,7 @@ export default function Navbar({navClass, navLight}){
             <div className="container">
                 <div className="navbar-content">
             <Link className="logo" href="/">
-                        <Image src='/images/logo-light.png' width={140} height={40} alt="Ahi-İK 360"/>
+                        <Image src='/images/ahikurumsal-logo.svg' width={140} height={40} alt="ahiKurumsal"/>
             </Link>
 
                     <button className="mobile-toggle" onClick={toggleMenu}>

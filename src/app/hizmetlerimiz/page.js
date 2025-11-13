@@ -9,12 +9,12 @@ import ScrollTop from "../componants/scrollTop";
 
 export async function generateMetadata() {
     return {
-        title: 'Hizmetlerimiz - AhiKariyer İnsan Kaynakları',
+        title: 'Hizmetlerimiz - Ahikurumsal İnsan Kaynakları',
         description: 'İşletmenizin ihtiyaç duyduğu tüm insan kaynakları hizmetlerini profesyonel ekibimizle sunuyoruz.',
         keywords: 'insan kaynakları hizmetleri, işe alım, özlük işlemleri, sgk işlemleri, iş sağlığı ve güvenliği',
         robots: 'index, follow',
         openGraph: {
-            title: 'Hizmetlerimiz - AhiKariyer İnsan Kaynakları',
+            title: 'Hizmetlerimiz - Ahikurumsal İnsan Kaynakları',
             description: 'İşletmenizin ihtiyaç duyduğu tüm insan kaynakları hizmetlerini profesyonel ekibimizle sunuyoruz.',
             type: 'website',
             locale: 'tr_TR',
@@ -43,7 +43,7 @@ export default async function Services(){
                 <div className="position-middle-bottom">
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                            <li className="breadcrumb-item"><Link href="/">AhİKariyer</Link></li>
+                            <li className="breadcrumb-item"><Link href="/">Ahikurumsal</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">Hizmetler</li>
                         </ul>
                     </nav>

@@ -1,0 +1,22 @@
+<svg viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4A90E2" />
+      <stop offset="100%" stop-color="#1E3A5F" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Mavi gradient daire -->
+  <circle cx="30" cy="30" r="28" fill="url(#blueGradient)" />
+  
+  <!-- ahi metni - beyaz -->
+  <text x="30" y="38" font-size="24" font-weight="700" fill="#FFFFFF" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="1">
+    ahi
+  </text>
+  
+  <!-- Kurumsal metni - siyah -->
+  <text x="75" y="38" font-size="24" font-weight="700" fill="#000000" text-anchor="start" font-family="Arial, sans-serif" letter-spacing="1">
+    Kurumsal
+  </text>
+</svg>
+

@@ -13,7 +13,7 @@ export default function HeroTabs() {
 
     return (
         <div className="title-heading text-center">
-            <h1 className="heading text-white fw-bold mb-4">AhiKariyer'e Hoş Geldiniz</h1>
+            <h1 className="heading text-white fw-bold mb-4">Ahikurumsal'a Hoş Geldiniz</h1>
             <p className="para-desc text-white-50 mx-auto mb-4">Hizmet türünüzü seçin</p>
             
             <div className="d-flex justify-content-center gap-3 flex-wrap">

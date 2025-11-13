@@ -44,7 +44,7 @@ export default function BlogDetail(props){
                             <ul className="list-inline text-center mb-0">
                                 <li className="list-inline-item mx-4 mt-4">
                                     <span className="text-white-50 d-block">Author</span>
-                                    <Link href="#" className="text-white title-dark">AhİKariyer</Link>
+                                    <Link href="#" className="text-white title-dark">Ahikurumsal</Link>
                                 </li>
 
                                 <li className="list-inline-item mx-4 mt-4">
@@ -64,7 +64,7 @@ export default function BlogDetail(props){
                 <div className="position-middle-bottom">
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                            <li className="breadcrumb-item"><Link href="/">Jobnova</Link></li>
+                            <li className="breadcrumb-item"><Link href="/">Ahikurumsal</Link></li>
                             <li className="breadcrumb-item"><Link href="/blogs">Blogs</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">Detail</li>
                         </ul>

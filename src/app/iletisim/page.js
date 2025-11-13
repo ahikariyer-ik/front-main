@@ -13,14 +13,14 @@ export async function generateMetadata() {
         const seo = contact?.seo || {};
 
         return {
-            title: seo.metaTitle || 'İletişim - AhiKariyer',
-            description: seo.metaDescription || 'AhiKariyer ile iletişime geçin. Size yardımcı olmaktan mutluluk duyarız.',
-            keywords: seo.metaKeywords || 'iletişim, ahikariyer, insan kaynakları, danışmanlık',
+            title: seo.metaTitle || 'İletişim - Ahikurumsal',
+            description: seo.metaDescription || 'Ahikurumsal ile iletişime geçin. Size yardımcı olmaktan mutluluk duyarız.',
+            keywords: seo.metaKeywords || 'iletişim, ahikurumsal, insan kaynakları, danışmanlık',
             robots: seo.metaRobots || 'index, follow',
-            canonical: seo.canonicalURL || 'https://ahikariyer.com/iletisim',
+            canonical: seo.canonicalURL || 'https://ahikurumsal.com/iletisim',
             openGraph: {
-                title: seo.metaTitle || 'İletişim - AhiKariyer',
-                description: seo.metaDescription || 'AhiKariyer ile iletişime geçin. Size yardımcı olmaktan mutluluk duyarız.',
+                title: seo.metaTitle || 'İletişim - Ahikurumsal',
+                description: seo.metaDescription || 'Ahikurumsal ile iletişime geçin. Size yardımcı olmaktan mutluluk duyarız.',
                 images: seo.metaImage ? [
                     {
                         url: `${process.env.NEXT_PUBLIC_IMAGE_BASE_URL}${seo.metaImage.url}`,
@@ -35,17 +35,17 @@ export async function generateMetadata() {
     } catch (error) {
         console.error('Meta verileri alınırken hata oluştu:', error);
         return {
-            title: 'İletişim - AhiKariyer',
-            description: 'AhiKariyer ile iletişime geçin. Size yardımcı olmaktan mutluluk duyarız.',
+            title: 'İletişim - Ahikurumsal',
+            description: 'Ahikurumsal ile iletişime geçin. Size yardımcı olmaktan mutluluk duyarız.',
         };
     }
 }
 
 export default async function Contact() {
     let contact = {
-        companyName: 'AhiKariyer',
+        companyName: 'Ahikurumsal',
         phone: '+90 (326) 614 01 53',
-        email: 'info@ahikariyer.com',
+        email: 'info@ahikurumsal.com',
         address: 'Yeni Mahalle, Şehit Fuat Bey Caddesi No:1/3',
         city: 'İskenderun',
         country: 'Hatay',
@@ -134,7 +134,7 @@ export default async function Contact() {
                     <div className="position-middle-bottom">
                         <nav aria-label="breadcrumb" className="d-block">
                             <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                                <li className="breadcrumb-item"><Link href="/">AHİKariyer</Link></li>
+                                <li className="breadcrumb-item"><Link href="/">Ahikurumsal</Link></li>
                                 <li className="breadcrumb-item active" aria-current="page">İletişim</li>
                             </ul>
                         </nav>
