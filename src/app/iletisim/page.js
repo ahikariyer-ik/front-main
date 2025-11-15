@@ -63,7 +63,7 @@ export default async function Contact() {
     try {
         const response = await fetchContactInfo();
         if (response?.data) {
-            const apiContact = response.data[0];
+            const apiContact = response.data;
             contact = {
                 ...contact,
                 companyName: apiContact.companyName || contact.companyName,

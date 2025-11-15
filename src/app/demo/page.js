@@ -203,7 +203,7 @@ export default function DemoPage() {
                                             <div className="col-12 text-center mt-4">
                                                 <p className="mb-0">
                                                     Zaten hesabınız var mı?{' '}
-                                                    <Link href="http://localhost:3001/login" className="text-primary fw-bold">
+                                                    <Link href="https://admin.ahikurumsal.com/login" className="text-primary fw-bold">
                                                         Giriş Yapın
                                                     </Link>
                                                 </p>

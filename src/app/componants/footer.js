@@ -7,7 +7,7 @@ export default function Footer() {
             <div className="container">
                 <div className="footer-content">
                     <div className="footer-left">
-                        <p>© 2025 Ahi-İK 360 | Tüm Hakları Saklıdır.</p>
+                        <p>© 2025 AhiKurumsal | Tüm Hakları Saklıdır.</p>
                     </div>
                     <div className="footer-right">
                         <Link href="/privacy">Gizlilik Politikası</Link>
